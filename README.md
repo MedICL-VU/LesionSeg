@@ -1,3 +1,6 @@
+![](https://img.shields.io/badge/language-python-orange.svg)
+[![](https://img.shields.io/badge/license-BSD-000000.svg)](https://github.com/HuahongZhang/LesionSeg/blob/master/LICENSE)
+
 # Multiple Sclerosis Lesion Segmentation
 
 The repository is the implementation of the paper "Multiple Sclerosis Lesion Segmentation with Tiramisu and 2.5D Stacked Slices". 
