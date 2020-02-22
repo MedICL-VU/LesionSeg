@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/language-python-brightgreen.svg)
+![](https://img.shields.io/badge/Language-python-brightgreen.svg)
 [![](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://github.com/HuahongZhang/LesionSeg/blob/master/LICENSE)
 
 # Multiple Sclerosis Lesion Segmentation
