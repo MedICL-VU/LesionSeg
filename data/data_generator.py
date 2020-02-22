@@ -6,6 +6,7 @@ import numpy as np
 import nibabel as nib
 from util.util import mkdir
 from util.image_property import hash_file, slice_with_neighborhood
+from configurations import SUFFIX
 
 
 def remove_folder_if_exist(folder_path):
@@ -36,7 +37,7 @@ class DataGenerator:
         remove_folder_if_exist(os.path.join(self.dataroot, 'val'))
         remove_folder_if_exist(os.path.join(self.dataroot, 'test'))
 
-        all_ids = sorted(list(self.dic_ids.keys()))
+        all_ids = sorted(list(map(int, self.dic_ids.keys())))
         total_num = len(all_ids)
         print(all_ids)
 
@@ -108,10 +109,10 @@ class DataGenerator:
         modalities = self.dic_ids[str(subject_id)][str(timepoint)]['modalities']
         for modality in modalities:
             path_src = self.dic_ids[str(subject_id)][str(timepoint)]['modalities'][modality]
-            path_dst = os.path.join(self.dir_this_phase, mask + '_%s%d_%s.nii' % (phase, self.sample_3d_count, modality))
+            path_dst = os.path.join(self.dir_this_phase, mask + '_%s%d_%s.%s' % (phase, self.sample_3d_count, modality, SUFFIX))
             shutil.copyfile(path_src, path_dst)
         path_src_mask = self.dic_ids[str(subject_id)][str(timepoint)]['mask'][mask]
-        path_dst_mask = os.path.join(self.dir_this_phase, mask + '_%s%d_mask.nii' % (phase, self.sample_3d_count))
+        path_dst_mask = os.path.join(self.dir_this_phase, mask + '_%s%d_mask.%s' % (phase, self.sample_3d_count, SUFFIX))
         shutil.copyfile(path_src_mask, path_dst_mask)
 
 

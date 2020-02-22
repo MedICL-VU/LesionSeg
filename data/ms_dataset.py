@@ -40,7 +40,7 @@ class MsDataset(BaseDataset):
         mask = data_return['mask']
         _, h, w2 = mask.size()
 
-        if w2 > self.opt.trainSize and h > self.opt.trainSize:
+        if w2 >= self.opt.trainSize and h >= self.opt.trainSize:
             cnt = 0
             while True:
                 w_offset = random.randint(0, max(0, w2 - self.opt.trainSize - 1))
@@ -52,7 +52,7 @@ class MsDataset(BaseDataset):
                                                 w_offset:w_offset + self.opt.trainSize]
                     break
                 cnt += 1
-        elif w2 < self.opt.trainSize and h < self.opt.trainSize:
+        elif w2 <= self.opt.trainSize and h <= self.opt.trainSize:
             w_offset = random.randint(0, max(0, self.opt.trainSize - w2 - 1))
             h_offset = random.randint(0, max(0, self.opt.trainSize - h - 1))
             pad_param = [w_offset, self.opt.trainSize - w2 - w_offset, h_offset, self.opt.trainSize - h - h_offset]
