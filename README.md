@@ -28,6 +28,7 @@ If you use this code, please cite our work, the reference is
 	pages = {338--346}
 }
 ```
+If you have any problem, feel free to contact huahong.zhang@vanderbilt.edu or open an Issue in this repo. 
 
 ## Prerequisites
 * NVIDIA GPU + CUDA + cuDNN
