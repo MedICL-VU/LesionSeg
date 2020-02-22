@@ -23,8 +23,8 @@ def set_seed():
 
     # make cudnn to be reproducible for performance
     # can be commented for faster training
-    torch.backends.cudnn.benchmark = False
-    torch.backends.cudnn.deterministic = True
+    # torch.backends.cudnn.benchmark = False
+    # torch.backends.cudnn.deterministic = True
 
 
 def get_val_test_opts(opt_train):
