@@ -30,7 +30,7 @@ If you would like to cite our work, the reference is
 ```
 
 ## Prerequisites
-* NVIDIA GPU + CUDA cuDNN
+* NVIDIA GPU + CUDA + cuDNN
 
 ## Installation
 We suggest installing the dependencies using Anaconda
