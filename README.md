@@ -2,7 +2,7 @@
 [![](https://img.shields.io/badge/License-BSD%203--Clause-orange.svg)](https://github.com/HuahongZhang/LesionSeg/blob/master/LICENSE)
 ![codebeat badge](https://codebeat.co/badges/f1d7b019-d5e4-462a-a77f-ee8df1dd216c)
 
-# Multiple Sclerosis Lesion Segmentation
+# Multiple Sclerosis (MS) Lesion Segmentation
 
 The repository is the implementation of the paper "Multiple Sclerosis Lesion Segmentation with Tiramisu and 2.5D Stacked Slices". 
 The paper link is https://link.springer.com/chapter/10.1007/978-3-030-32248-9_38
