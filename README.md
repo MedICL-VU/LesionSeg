@@ -10,7 +10,7 @@ The paper link is https://link.springer.com/chapter/10.1007/978-3-030-32248-9_38
 Currently, the model has the state-of-the-art performance for MS lesion segmentation and it was evaluated on the ISBI 2015 dataset. 
 The overall score of 93.1 placed the L2-loss variant of our method in the first position on the leaderboard, 
 while the focal-loss variant has obtained the best Dice coefficient and lesion-wise true positive rate with 69.3% and 60.2%, respectively. 
-The ISBI 2015 challenge website is https://smart-stats-tools.org/lesion-challenge
+The ISBI 2015 challenge website is https://smart-stats-tools.org/lesion-challenge (Our current version got 93.358)
 
 ![challenge_leaderboard](https://i.imgur.com/wBWrkJu.png)
 
