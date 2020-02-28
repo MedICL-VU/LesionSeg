@@ -12,6 +12,8 @@ The overall score of 93.1 placed the L2-loss variant of our method in the first 
 while the focal-loss variant has obtained the best Dice coefficient and lesion-wise true positive rate with 69.3% and 60.2%, respectively. 
 The ISBI 2015 challenge website is https://smart-stats-tools.org/lesion-challenge
 
+![challenge_leaderboard](https://i.imgur.com/wBWrkJu.png)
+
 If you use this code, please cite our work, the reference is
 ```
 @inproceedings{zhang_multiple_2019,
